@@ -12,3 +12,10 @@ ScriptedImporter:
   wrapperCodePath: 
   wrapperClassName: 
   wrapperCodeNamespace: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 330976
+  packageName: 2D Lighting for Pixel Art| Project files
+  packageVersion: 2.0.1
+  assetPath: Assets/Settings/InputSystem_Actions.inputactions
+  uploadId: 968486

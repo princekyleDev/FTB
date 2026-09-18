@@ -236,7 +236,7 @@ MonoBehaviour:
     m_Value: 0.8
   texture:
     m_OverrideState: 1
-    m_Value: {fileID: 0}
+    m_Value: {fileID: 2800000, guid: f306bcd44722c4d499486e241cb1b143, type: 3}
 --- !u!114 &3060662736101092581
 MonoBehaviour:
   m_ObjectHideFlags: 3

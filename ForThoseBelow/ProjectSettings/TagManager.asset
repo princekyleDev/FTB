@@ -47,6 +47,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Ground
+    uniqueID: 2870336691
+    locked: 0
+  - name: 'Stairs '
+    uniqueID: 58475159
+    locked: 0
+  - name: Player
+    uniqueID: 500801393
+    locked: 0
+  - name: Railings
+    uniqueID: 4188913421
+    locked: 0
   - name: VFX_Front
     uniqueID: 3867845547
     locked: 0

@@ -50,6 +50,9 @@ TagManager:
   - name: Ground
     uniqueID: 2870336691
     locked: 0
+  - name: Railings under
+    uniqueID: 3659689213
+    locked: 0
   - name: 'Stairs '
     uniqueID: 58475159
     locked: 0
@@ -62,7 +65,7 @@ TagManager:
   - name: VFX_Front
     uniqueID: 3867845547
     locked: 0
-  - name: Character
+  - name: Player
     uniqueID: 2544176603
     locked: 0
   m_RenderingLayers:

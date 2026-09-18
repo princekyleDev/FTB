@@ -50,6 +50,12 @@ TagManager:
   - name: Ground
     uniqueID: 2870336691
     locked: 0
+  - name: Building under
+    uniqueID: 2241392437
+    locked: 0
+  - name: Boxes
+    uniqueID: 668959679
+    locked: 0
   - name: Railings under
     uniqueID: 3659689213
     locked: 0
@@ -59,8 +65,20 @@ TagManager:
   - name: Player
     uniqueID: 500801393
     locked: 0
+  - name: Trees
+    uniqueID: 3147181225
+    locked: 0
   - name: Railings
     uniqueID: 4188913421
+    locked: 0
+  - name: Buiilding over
+    uniqueID: 2065785655
+    locked: 0
+  - name: Sign
+    uniqueID: 2414136597
+    locked: 0
+  - name: Street Lights
+    uniqueID: 3358570131
     locked: 0
   - name: VFX_Front
     uniqueID: 3867845547

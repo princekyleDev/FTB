@@ -1,0 +1,613 @@
+fileFormatVersion: 2
+guid: 7b8f010c5e48c064db4b853e65ec1ae8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4361291346468345396
+    second: Gears and steam engine na bilog (1)_0
+  - first:
+      213: 4475673390884257909
+    second: Gears and steam engine na bilog (1)_1
+  - first:
+      213: -3672745489941410825
+    second: Gears and steam engine na bilog (1)_2
+  - first:
+      213: -2788724005388291204
+    second: Gears and steam engine na bilog (1)_3
+  - first:
+      213: -7402052233879570287
+    second: Gears and steam engine na bilog (1)_4
+  - first:
+      213: 6364854525405488049
+    second: Gears and steam engine na bilog (1)_5
+  - first:
+      213: -2880194892801242035
+    second: Gears and steam engine na bilog (1)_6
+  - first:
+      213: -835958065064787735
+    second: Gears and steam engine na bilog (1)_7
+  - first:
+      213: -302523998128877940
+    second: Gears and steam engine na bilog (1)_8
+  - first:
+      213: 5399096689179154240
+    second: Gears and steam engine na bilog (1)_9
+  - first:
+      213: 7930054246176725525
+    second: Gears and steam engine na bilog (1)_10
+  - first:
+      213: 4271453954819324516
+    second: Gears and steam engine na bilog (1)_11
+  - first:
+      213: 2212710075961764371
+    second: Gears and steam engine na bilog (1)_12
+  - first:
+      213: 3078275963113957232
+    second: Gears and steam engine na bilog (1)_13
+  - first:
+      213: 7972882141362069223
+    second: Gears and steam engine na bilog (1)_14
+  - first:
+      213: -286712006829080994
+    second: Gears and steam engine na bilog (1)_15
+  - first:
+      213: -8113737266620395111
+    second: Gears and steam engine na bilog (1)_16
+  - first:
+      213: -3681413322014791079
+    second: Gears and steam engine na bilog (1)_17
+  - first:
+      213: 8180025500358311291
+    second: Gears and steam engine na bilog (1)_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 192
+        width: 43
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4361b3c5f5b668c30800000000000000
+      internalID: 4361291346468345396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 186
+        width: 56
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57003526c39cc1e30800000000000000
+      internalID: 4475673390884257909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_2
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 180
+        width: 65
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fbcf999f69c70dc0800000000000000
+      internalID: -3672745489941410825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_3
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 190
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73f93ada467c49d0800000000000000
+      internalID: -2788724005388291204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 120
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198b8b606b0a64990800000000000000
+      internalID: -7402052233879570287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_5
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 118
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3e4d9e771845850800000000000000
+      internalID: 6364854525405488049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_6
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 121
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4c00b2410e7708d0800000000000000
+      internalID: -2880194892801242035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_7
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 128
+        width: 11
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0c0b4a1941664f0800000000000000
+      internalID: -835958065064787735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_8
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 105
+        width: 40
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8e4f7bc6083dcbf0800000000000000
+      internalID: -302523998128877940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_9
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 147
+        width: 80
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047d28a45d17dea40800000000000000
+      internalID: 5399096689179154240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_10
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 118
+        width: 65
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51a11f852563d0e60800000000000000
+      internalID: 7930054246176725525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_11
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 131
+        width: 33
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a7173adb0474b30800000000000000
+      internalID: 4271453954819324516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_12
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 38
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ae0a4371025be10800000000000000
+      internalID: 2212710075961764371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_13
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 38
+        width: 33
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 077e706ddab38ba20800000000000000
+      internalID: 3078275963113957232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_14
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 39
+        width: 30
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ee11ffb01e55ae60800000000000000
+      internalID: 7972882141362069223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_15
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 40
+        width: 57
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5efc18e2f4650cf0800000000000000
+      internalID: -286712006829080994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 40
+        width: 37
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9911e36c1f6366f80800000000000000
+      internalID: -8113737266620395111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_17
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 39
+        width: 128
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95aeaeda61ef8ecc0800000000000000
+      internalID: -3681413322014791079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gears and steam engine na bilog (1)_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 10
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d7e7a5ad9458170800000000000000
+      internalID: 8180025500358311291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Gears and steam engine na bilog (1)_0: 4361291346468345396
+      Gears and steam engine na bilog (1)_1: 4475673390884257909
+      Gears and steam engine na bilog (1)_10: 7930054246176725525
+      Gears and steam engine na bilog (1)_11: 4271453954819324516
+      Gears and steam engine na bilog (1)_12: 2212710075961764371
+      Gears and steam engine na bilog (1)_13: 3078275963113957232
+      Gears and steam engine na bilog (1)_14: 7972882141362069223
+      Gears and steam engine na bilog (1)_15: -286712006829080994
+      Gears and steam engine na bilog (1)_16: -8113737266620395111
+      Gears and steam engine na bilog (1)_17: -3681413322014791079
+      Gears and steam engine na bilog (1)_18: 8180025500358311291
+      Gears and steam engine na bilog (1)_2: -3672745489941410825
+      Gears and steam engine na bilog (1)_3: -2788724005388291204
+      Gears and steam engine na bilog (1)_4: -7402052233879570287
+      Gears and steam engine na bilog (1)_5: 6364854525405488049
+      Gears and steam engine na bilog (1)_6: -2880194892801242035
+      Gears and steam engine na bilog (1)_7: -835958065064787735
+      Gears and steam engine na bilog (1)_8: -302523998128877940
+      Gears and steam engine na bilog (1)_9: 5399096689179154240
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

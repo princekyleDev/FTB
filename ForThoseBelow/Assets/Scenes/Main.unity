@@ -8436,6 +8436,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1568537558 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 937647411873229579, guid: 873a6e2f5cc38d143ada2123213532e2, type: 3}
+  m_PrefabInstance: {fileID: 7701067425707587010}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27187163b900fb648a766eac97b88add, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
 --- !u!1 &1615721751
 GameObject:
   m_ObjectHideFlags: 0
@@ -9172,6 +9183,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1853600639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3060675373863833555, guid: 873a6e2f5cc38d143ada2123213532e2, type: 3}
+  m_PrefabInstance: {fileID: 7701067425707587010}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1872621465
 GameObject:
   m_ObjectHideFlags: 0
@@ -84024,6 +84040,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3060675373863833555, guid: 873a6e2f5cc38d143ada2123213532e2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5551011769860084813, guid: 873a6e2f5cc38d143ada2123213532e2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.1
@@ -84117,6 +84137,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4728267638399542337, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1853600639}
+    - target: {fileID: 4728267638399542337, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+      propertyPath: onStart.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1568537558}
+    - target: {fileID: 4728267638399542337, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+      propertyPath: onSuccess.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1853600639}
+    - target: {fileID: 4728267638399542337, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+      propertyPath: onSuccess.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1568537558}
     - target: {fileID: 7368553656390240677, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
       propertyPath: m_Name
       value: Managers

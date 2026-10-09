@@ -86,6 +86,9 @@ TagManager:
   - name: Player
     uniqueID: 2544176603
     locked: 0
+  - name: NPC
+    uniqueID: 2869898963
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

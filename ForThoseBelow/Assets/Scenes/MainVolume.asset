@@ -68,7 +68,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 1, b: 1, a: 1}
   highlights:
     m_OverrideState: 1
-    m_Value: {r: 0.3886792, g: 0.28169185, b: 0.14300457, a: 1}
+    m_Value: {r: 0.2603773, g: 0.14581127, b: 0, a: 1}
   balance:
     m_OverrideState: 1
     m_Value: 64
@@ -149,10 +149,10 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: -0.13
+    m_Value: 0.35
   xMultiplier:
     m_OverrideState: 1
-    m_Value: 0.956
+    m_Value: 1
   yMultiplier:
     m_OverrideState: 1
     m_Value: 1

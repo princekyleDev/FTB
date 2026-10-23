@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/_TestLighting/NoLighting.unity
-    guid: bb356265201af4d40b05e21e32f76eaf
+    path: Assets/Scenes/Titlescreen.unity
+    guid: 353a8a8d94e1b71428d3a6350d46276f
   - enabled: 1
-    path: Assets/Scenes/_TestLighting/Completed.unity
-    guid: c3e82cf2e80ca5542bbc8025185d98c8
+    path: Assets/Scenes/Main.unity
+    guid: d9b8df3d10d1c6242a6d0525bd1d9b09
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

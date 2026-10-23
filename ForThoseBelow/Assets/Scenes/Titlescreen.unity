@@ -566,6 +566,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4493830549191151870, guid: 8c5c6efb7ebff2c47951b3d90ef4b312, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4663646052674214146, guid: 8c5c6efb7ebff2c47951b3d90ef4b312, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.1
@@ -1663,6 +1667,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1362535684562204987, guid: d3a54f3ee52240648b7a71cf165bf2fd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2351399068150305500, guid: d3a54f3ee52240648b7a71cf165bf2fd, type: 3}
       propertyPath: m_Name
       value: Lighting

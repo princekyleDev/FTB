@@ -125,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2954525272239394766}
   - component: {fileID: 8012080363118869926}
+  - component: {fileID: 8536232220847563482}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -208,6 +209,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &8536232220847563482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722800970057906506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2abb0e2f1a451214496e2014304b3659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestCollectible
+  questID: Quest1
+  collectibleObject: {fileID: 0}
+  disableOnCollect: 0
+  onCollected:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &6814156197825956566
 GameObject:
   m_ObjectHideFlags: 0
@@ -320,6 +339,12 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   onExited:
+    m_PersistentCalls:
+      m_Calls: []
+  enableTimer: 0
+  timerDuration: 4
+  triggerOnlyOnce: 1
+  onTimerComplete:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &7305963568288003332

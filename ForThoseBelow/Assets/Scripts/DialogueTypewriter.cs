@@ -19,12 +19,19 @@ public class DialogueTypewriter : MonoBehaviour
     [SerializeField] private bool playOnStart = false;
     [SerializeField] private bool useUnscaledTime = true;
 
+    [Header("Input")]
+    [SerializeField] private KeyCode continueKey = KeyCode.Space;
+    [SerializeField] private bool skipWhileTyping = true;
+    [SerializeField] private bool disableOnFinish = true;
+
     [Header("Events")]
     [SerializeField] private UnityEvent onTypeStart;
     [SerializeField] private UnityEvent onTypeComplete;
+    [SerializeField] private UnityEvent onDialogueClosed;
 
     private Coroutine typingCoroutine;
     private bool isTyping;
+    private bool isFinished;
 
     public bool IsTyping => isTyping;
 
@@ -32,6 +39,23 @@ public class DialogueTypewriter : MonoBehaviour
     {
         if (playOnStart)
             Play();
+    }
+
+    private void Update()
+    {
+        if (!Input.GetKeyDown(continueKey))
+            return;
+
+        if (isTyping)
+        {
+            if (skipWhileTyping)
+                Skip();
+
+            return;
+        }
+
+        if (isFinished)
+            Close();
     }
 
     public void Play()
@@ -53,6 +77,8 @@ public class DialogueTypewriter : MonoBehaviour
         dialogueText.ForceMeshUpdate();
 
         isTyping = true;
+        isFinished = false;
+
         onTypeStart?.Invoke();
 
         typingCoroutine = StartCoroutine(TypeText());
@@ -66,14 +92,27 @@ public class DialogueTypewriter : MonoBehaviour
         {
             dialogueText.maxVisibleCharacters = i + 1;
 
-            if (useUnscaledTime)
-                yield return new WaitForSecondsRealtime(characterDelay);
+            if (characterDelay > 0f)
+            {
+                if (useUnscaledTime)
+                    yield return new WaitForSecondsRealtime(characterDelay);
+                else
+                    yield return new WaitForSeconds(characterDelay);
+            }
             else
-                yield return new WaitForSeconds(characterDelay);
+            {
+                yield return null;
+            }
         }
 
         typingCoroutine = null;
+        FinishTyping();
+    }
+
+    private void FinishTyping()
+    {
         isTyping = false;
+        isFinished = true;
 
         onTypeComplete?.Invoke();
     }
@@ -90,9 +129,20 @@ public class DialogueTypewriter : MonoBehaviour
         }
 
         dialogueText.maxVisibleCharacters = int.MaxValue;
-        isTyping = false;
+        FinishTyping();
+    }
 
-        onTypeComplete?.Invoke();
+    public void Close()
+    {
+        if (!isFinished)
+            return;
+
+        isFinished = false;
+
+        onDialogueClosed?.Invoke();
+
+        if (disableOnFinish)
+            gameObject.SetActive(false);
     }
 
     public void SetDialogue(string newDialogue)
@@ -109,5 +159,6 @@ public class DialogueTypewriter : MonoBehaviour
         }
 
         isTyping = false;
+        isFinished = false;
     }
 }

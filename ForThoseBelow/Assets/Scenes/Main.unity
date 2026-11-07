@@ -1942,6 +1942,7 @@ GameObject:
   - component: {fileID: 267628384}
   - component: {fileID: 267628386}
   - component: {fileID: 267628385}
+  - component: {fileID: 267628387}
   m_Layer: 0
   m_Name: CinemachineCamera
   m_TagString: Untagged
@@ -2051,6 +2052,26 @@ MonoBehaviour:
     RotationDamping: {x: 1, y: 1, z: 1}
     QuaternionDamping: 1
   FollowOffset: {x: 0, y: 0, z: -10}
+--- !u!114 &267628387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267628382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f453f694addf4275988fac205bc91968, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineConfiner2D
+  BoundingShape2D: {fileID: 8114590004045624732}
+  Damping: 0.5
+  SlowingDistance: 5
+  OversizeWindow:
+    Enabled: 0
+    MaxWindowSize: 0
+    Padding: 0
+  m_LegacyMaxWindowSize: -2
 --- !u!1 &287980094
 GameObject:
   m_ObjectHideFlags: 0
@@ -96424,6 +96445,11 @@ PrefabInstance:
       addedObject: {fileID: 1839435999}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+--- !u!60 &8114590004045624732 stripped
+PolygonCollider2D:
+  m_CorrespondingSourceObject: {fileID: 1266793263046479719, guid: 9ea3064163fccef4fb2cfb553e9880d5, type: 3}
+  m_PrefabInstance: {fileID: 8114590004045624731}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

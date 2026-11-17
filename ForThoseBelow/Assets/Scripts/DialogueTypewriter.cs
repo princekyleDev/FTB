@@ -1,4 +1,3 @@
-
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -18,10 +17,6 @@ public class DialogueTypewriter : MonoBehaviour
 
     [SerializeField] private bool playOnStart = false;
     [SerializeField] private bool useUnscaledTime = true;
-
-    [Header("Input")]
-    [SerializeField] private KeyCode continueKey = KeyCode.Space;
-    [SerializeField] private bool skipWhileTyping = true;
     [SerializeField] private bool disableOnFinish = true;
 
     [Header("Events")]
@@ -31,7 +26,6 @@ public class DialogueTypewriter : MonoBehaviour
 
     private Coroutine typingCoroutine;
     private bool isTyping;
-    private bool isFinished;
 
     public bool IsTyping => isTyping;
 
@@ -41,22 +35,7 @@ public class DialogueTypewriter : MonoBehaviour
             Play();
     }
 
-    private void Update()
-    {
-        if (!Input.GetKeyDown(continueKey))
-            return;
-
-        if (isTyping)
-        {
-            if (skipWhileTyping)
-                Skip();
-
-            return;
-        }
-
-        if (isFinished)
-            Close();
-    }
+    // Input is handled by NPCDialogue.cs.
 
     public void Play()
     {
@@ -66,20 +45,32 @@ public class DialogueTypewriter : MonoBehaviour
     public void Play(string newDialogue)
     {
         if (dialogueText == null)
+        {
+            Debug.LogWarning(
+                "Assign Dialogue Text in the Inspector.",
+                this
+            );
+
             return;
+        }
 
-        if (typingCoroutine != null)
-            StopCoroutine(typingCoroutine);
+        StopTyping();
 
-        dialogue = newDialogue;
+        dialogue = newDialogue ?? "";
+
         dialogueText.text = dialogue;
         dialogueText.maxVisibleCharacters = 0;
         dialogueText.ForceMeshUpdate();
 
         isTyping = true;
-        isFinished = false;
 
         onTypeStart?.Invoke();
+
+        if (dialogueText.textInfo.characterCount == 0)
+        {
+            FinishTyping();
+            return;
+        }
 
         typingCoroutine = StartCoroutine(TypeText());
     }
@@ -95,9 +86,17 @@ public class DialogueTypewriter : MonoBehaviour
             if (characterDelay > 0f)
             {
                 if (useUnscaledTime)
-                    yield return new WaitForSecondsRealtime(characterDelay);
+                {
+                    yield return new WaitForSecondsRealtime(
+                        characterDelay
+                    );
+                }
                 else
-                    yield return new WaitForSeconds(characterDelay);
+                {
+                    yield return new WaitForSeconds(
+                        characterDelay
+                    );
+                }
             }
             else
             {
@@ -112,8 +111,6 @@ public class DialogueTypewriter : MonoBehaviour
     private void FinishTyping()
     {
         isTyping = false;
-        isFinished = true;
-
         onTypeComplete?.Invoke();
     }
 
@@ -122,22 +119,18 @@ public class DialogueTypewriter : MonoBehaviour
         if (!isTyping)
             return;
 
-        if (typingCoroutine != null)
-        {
-            StopCoroutine(typingCoroutine);
-            typingCoroutine = null;
-        }
+        StopTyping();
 
-        dialogueText.maxVisibleCharacters = int.MaxValue;
+        if (dialogueText != null)
+            dialogueText.maxVisibleCharacters = int.MaxValue;
+
         FinishTyping();
     }
 
     public void Close()
     {
-        if (!isFinished)
-            return;
-
-        isFinished = false;
+        // Allow closing even while text is still typing.
+        StopTyping();
 
         onDialogueClosed?.Invoke();
 
@@ -147,10 +140,10 @@ public class DialogueTypewriter : MonoBehaviour
 
     public void SetDialogue(string newDialogue)
     {
-        dialogue = newDialogue;
+        dialogue = newDialogue ?? "";
     }
 
-    private void OnDisable()
+    private void StopTyping()
     {
         if (typingCoroutine != null)
         {
@@ -159,6 +152,10 @@ public class DialogueTypewriter : MonoBehaviour
         }
 
         isTyping = false;
-        isFinished = false;
+    }
+
+    private void OnDisable()
+    {
+        StopTyping();
     }
 }

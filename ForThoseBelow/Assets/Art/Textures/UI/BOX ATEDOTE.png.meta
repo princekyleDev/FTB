@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 9a5a596434effea459743e38c03214bb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2294854680773308139
+    second: BOX ATEDOTE_0
+  - first:
+      213: 4091177847431763924
+    second: BOX ATEDOTE_1
+  - first:
+      213: -3084969824979842254
+    second: BOX ATEDOTE_2
+  - first:
+      213: -7987103694244469163
+    second: BOX ATEDOTE_3
+  - first:
+      213: 1805274604270728745
+    second: BOX ATEDOTE_4
+  - first:
+      213: -3602916537336510710
+    second: BOX ATEDOTE_5
+  - first:
+      213: 2760612218212070339
+    second: BOX ATEDOTE_6
+  - first:
+      213: -5208757235765354396
+    second: BOX ATEDOTE_7
+  - first:
+      213: -5333280304557687882
+    second: BOX ATEDOTE_8
+  - first:
+      213: 3329696514111385582
+    second: BOX ATEDOTE_9
+  - first:
+      213: -5315225998351941034
+    second: BOX ATEDOTE_10
+  - first:
+      213: -856686934872451262
+    second: BOX ATEDOTE_11
+  - first:
+      213: -7926020215302238576
+    second: BOX ATEDOTE_12
+  - first:
+      213: -3029782824228284447
+    second: BOX ATEDOTE_13
+  - first:
+      213: 5439815502755753483
+    second: BOX ATEDOTE_14
+  - first:
+      213: 3095168169616455721
+    second: BOX ATEDOTE_15
+  - first:
+      213: 2433952152190281295
+    second: BOX ATEDOTE_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BOX ATEDOTE_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 330
+        width: 130
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beea2aa6c26f8df10800000000000000
+      internalID: 2294854680773308139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 378
+        width: 450
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d71e158398c6c830800000000000000
+      internalID: 4091177847431763924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_2
+      rect:
+        serializedVersion: 2
+        x: 670
+        y: 427
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23b074ff94cff25d0800000000000000
+      internalID: -3084969824979842254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_3
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 282
+        width: 634
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5562950f18b182190800000000000000
+      internalID: -7987103694244469163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_4
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 282
+        width: 634
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926379510bf9d0910800000000000000
+      internalID: 1805274604270728745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_5
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 333
+        width: 178
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a074da49f7edffdc0800000000000000
+      internalID: -3602916537336510710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_6
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 314
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c33225af2aaf4620800000000000000
+      internalID: 2760612218212070339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_7
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 346
+        width: 70
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 460e5f824e6c6b7b0800000000000000
+      internalID: -5208757235765354396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_8
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 219
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb7047e1d16cf5b0800000000000000
+      internalID: -5333280304557687882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_9
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 218
+        width: 68
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eef277d8655753e20800000000000000
+      internalID: 3329696514111385582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_10
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 239
+        width: 28
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 652cf43ad168c36b0800000000000000
+      internalID: -5315225998351941034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_11
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 250
+        width: 9
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247953b85cf6c14f0800000000000000
+      internalID: -856686934872451262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_12
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 250
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09e4858ab9e110290800000000000000
+      internalID: -7926020215302238576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_13
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 118
+        width: 246
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e71b47e29c04f5d0800000000000000
+      internalID: -3029782824228284447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_14
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 133
+        width: 217
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e6b6dd06b1e7b40800000000000000
+      internalID: 5439815502755753483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_15
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 111
+        width: 246
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928b5162d0f34fa20800000000000000
+      internalID: 3095168169616455721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BOX ATEDOTE_16
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 74
+        width: 217
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f466997369227c120800000000000000
+      internalID: 2433952152190281295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BOX ATEDOTE_0: 2294854680773308139
+      BOX ATEDOTE_1: 4091177847431763924
+      BOX ATEDOTE_10: -5315225998351941034
+      BOX ATEDOTE_11: -856686934872451262
+      BOX ATEDOTE_12: -7926020215302238576
+      BOX ATEDOTE_13: -3029782824228284447
+      BOX ATEDOTE_14: 5439815502755753483
+      BOX ATEDOTE_15: 3095168169616455721
+      BOX ATEDOTE_16: 2433952152190281295
+      BOX ATEDOTE_2: -3084969824979842254
+      BOX ATEDOTE_3: -7987103694244469163
+      BOX ATEDOTE_4: 1805274604270728745
+      BOX ATEDOTE_5: -3602916537336510710
+      BOX ATEDOTE_6: 2760612218212070339
+      BOX ATEDOTE_7: -5208757235765354396
+      BOX ATEDOTE_8: -5333280304557687882
+      BOX ATEDOTE_9: 3329696514111385582
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -176,7 +176,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLOCKWORK STUDIOS
+  m_text: 'MADE BY:
+
+    CLOCKWORK STUDIOS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -488,7 +490,7 @@ Transform:
   m_GameObject: {fileID: 532931341}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -963.75, y: -532.2, z: 0}
+  m_LocalPosition: {x: -963.75, y: -534.2, z: 0}
   m_LocalScale: {x: 2.4768, y: 2.4768, z: 2.4768}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1187,7 +1189,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 79, y: -300}
+  m_AnchoredPosition: {x: 35, y: 437}
   m_SizeDelta: {x: 461.3, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1307704208
@@ -1210,7 +1212,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: CLOCKWORK STUDIOS
+  m_text: 'MADE BY:
+
+    CLOCKWORK STUDIOS'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1244,7 +1248,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 27.98
@@ -1519,7 +1523,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2, y: -229}
+  m_AnchoredPosition: {x: 34, y: -305}
   m_SizeDelta: {x: 756.6583, y: 45.7194}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2073365516
@@ -1684,7 +1688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6752997882894560117, guid: f056a7a29df488d468a6875133b8dbcb, type: 3}
       propertyPath: onAfterDelay.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6752997882894560117, guid: f056a7a29df488d468a6875133b8dbcb, type: 3}
       propertyPath: onPressAnyKey.m_PersistentCalls.m_Calls.Array.size

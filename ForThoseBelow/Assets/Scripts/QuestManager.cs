@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,10 +11,16 @@ public class QuestManager : MonoBehaviour
     public class Quest
     {
         public string questID;
+
         public List<GameObject> requiredObjects = new();
+
+        public UnityEvent onAllItemsCollected;
         public UnityEvent onComplete;
 
-        [NonSerialized] public HashSet<GameObject> collectedObjects = new();
+        [NonSerialized]
+        public HashSet<GameObject> collectedObjects = new();
+
+        [NonSerialized] public bool isReadyForTurnIn;
         [NonSerialized] public bool isCompleted;
     }
 
@@ -34,6 +39,7 @@ public class QuestManager : MonoBehaviour
         foreach (Quest quest in quests)
         {
             quest.collectedObjects = new HashSet<GameObject>();
+            quest.isReadyForTurnIn = false;
             quest.isCompleted = false;
         }
     }
@@ -44,24 +50,39 @@ public class QuestManager : MonoBehaviour
             Instance = null;
     }
 
+    private Quest FindQuest(string questID)
+    {
+        return quests.Find(q => q.questID == questID);
+    }
+
     public bool CollectObject(string questID, GameObject obj)
     {
-        Quest quest = quests.Find(q => q.questID == questID);
+        Quest quest = FindQuest(questID);
 
         if (quest == null)
         {
-            Debug.LogWarning($"[QuestManager] Quest not found: {questID}");
+            Debug.LogWarning(
+                $"[QuestManager] Quest not found: {questID}",
+                this
+            );
+
             return false;
         }
 
-        if (quest.isCompleted)
+        if (obj == null ||
+            quest.isCompleted ||
+            quest.isReadyForTurnIn)
+        {
             return false;
+        }
 
         if (!quest.requiredObjects.Contains(obj))
         {
             Debug.LogWarning(
-                $"[QuestManager] {obj.name} is not registered in {questID}"
+                $"[QuestManager] {obj.name} is not registered in {questID}",
+                this
             );
+
             return false;
         }
 
@@ -70,50 +91,104 @@ public class QuestManager : MonoBehaviour
 
         Debug.Log(
             $"[QuestManager] {questID}: " +
-            $"{quest.collectedObjects.Count}/{quest.requiredObjects.Count}"
+            $"{quest.collectedObjects.Count}/{quest.requiredObjects.Count}",
+            this
         );
 
-        CheckQuestCompletion(quest);
+        CheckQuestReadiness(quest);
+
         return true;
     }
 
-    private void CheckQuestCompletion(Quest quest)
+    private void CheckQuestReadiness(Quest quest)
     {
-        if (quest.requiredObjects.Count == 0)
+        if (quest.isReadyForTurnIn ||
+            quest.requiredObjects.Count == 0)
+        {
             return;
+        }
 
         foreach (GameObject obj in quest.requiredObjects)
         {
-            if (obj == null || !quest.collectedObjects.Contains(obj))
+            if (obj == null ||
+                !quest.collectedObjects.Contains(obj))
+            {
                 return;
+            }
         }
 
-        CompleteQuest(quest);
+        quest.isReadyForTurnIn = true;
+
+        Debug.Log(
+            $"[QuestManager] Return to the NPC: {quest.questID}",
+            this
+        );
+
+        quest.onAllItemsCollected?.Invoke();
     }
 
-    private void CompleteQuest(Quest quest)
+    public bool IsQuestReadyForTurnIn(string questID)
     {
-        if (quest.isCompleted)
-            return;
+        Quest quest = FindQuest(questID);
+
+        return quest != null &&
+               quest.isReadyForTurnIn &&
+               !quest.isCompleted;
+    }
+
+    public bool TryCompleteQuest(string questID)
+    {
+        Quest quest = FindQuest(questID);
+
+        if (quest == null ||
+            !quest.isReadyForTurnIn ||
+            quest.isCompleted)
+        {
+            return false;
+        }
 
         quest.isCompleted = true;
 
-        Debug.Log($"[QuestManager] Quest Completed: {quest.questID}");
+        Debug.Log(
+            $"[QuestManager] Quest completed: {quest.questID}",
+            this
+        );
 
         quest.onComplete?.Invoke();
+
+        return true;
     }
 
+    public bool IsQuestCompleted(string questID)
+    {
+        Quest quest = FindQuest(questID);
+
+        return quest != null && quest.isCompleted;
+    }
+
+    public int GetCollectedCount(string questID)
+    {
+        Quest quest = FindQuest(questID);
+
+        return quest != null
+            ? quest.collectedObjects.Count
+            : 0;
+    }
+
+    // Debug shortcut only.
+    // Marks the quest ready so you can test returning to the NPC.
     public void TestCompleteQuest(int questIndex)
     {
         if (questIndex < 0 || questIndex >= quests.Count)
             return;
 
-        CompleteQuest(quests[questIndex]);
-    }
+        Quest quest = quests[questIndex];
 
-    public bool IsQuestCompleted(string questID)
-    {
-        Quest quest = quests.Find(q => q.questID == questID);
-        return quest != null && quest.isCompleted;
+        if (quest.isCompleted || quest.isReadyForTurnIn)
+            return;
+
+        quest.isReadyForTurnIn = true;
+
+        quest.onAllItemsCollected?.Invoke();
     }
 }

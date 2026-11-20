@@ -68,6 +68,7 @@ public class OldManDialogue : MonoBehaviour
         ExplainProblem,
         SecondChoices,
         Offer,
+        DroneWarning,
         Reminder,
         Congratulations,
         WeldingLesson,
@@ -159,7 +160,11 @@ public class OldManDialogue : MonoBehaviour
             return;
         }
 
-        if (keyboard.spaceKey.wasPressedThisFrame)
+        bool warningSequence = stage == Stage.Offer || stage == Stage.DroneWarning;
+        bool enterPressed = keyboard.enterKey.wasPressedThisFrame ||
+                            keyboard.numpadEnterKey.wasPressedThisFrame;
+
+        if (keyboard.spaceKey.wasPressedThisFrame || (warningSequence && enterPressed))
         {
             if (isTyping)
                 RevealLine();
@@ -316,7 +321,15 @@ public class OldManDialogue : MonoBehaviour
         {
             hint = "[Space] Continue";
         }
-        else if (stage == Stage.Offer || stage == Stage.Reminder)
+        else if (stage == Stage.Offer)
+        {
+            hint = "[Enter / Space] Continue   [E] Close";
+        }
+        else if (stage == Stage.DroneWarning)
+        {
+            hint = "[Enter / Space] Finish   [E] Close";
+        }
+        else if (stage == Stage.Reminder)
         {
             hint = "[Space] Finish   [E] Close";
         }
@@ -390,6 +403,15 @@ public class OldManDialogue : MonoBehaviour
                 break;
 
             case Stage.Offer:
+                stage = Stage.DroneWarning;
+
+                ShowLine(
+                    false,
+                    "Oh and one last thing, make sure to avoid the drones at night. Best of luck!"
+                );
+                break;
+
+            case Stage.DroneWarning:
             case Stage.Reminder:
                 CloseDialogue();
                 break;
@@ -401,7 +423,7 @@ public class OldManDialogue : MonoBehaviour
                     false,
                     "A promise is a promise. Come closer, Fierren. " +
                     "I’ll teach you my secret welding technique—the " +
-                    "trick to making a repair that holds. " +
+                    "trick to making a repair that lasts. " +
                     "Watch carefully!"
                 );
                 break;

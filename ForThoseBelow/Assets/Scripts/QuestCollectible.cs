@@ -9,6 +9,10 @@ public class QuestCollectible : MonoBehaviour
     [SerializeField] private GameObject collectibleObject;
     [SerializeField] private bool disableOnCollect = false;
 
+    [Header("Pickup VFX")]
+    [SerializeField] private GameObject pickupVfxPrefab;
+    [SerializeField, Min(0f)] private float pickupVfxLifetime = 1f;
+
     [Header("Events")]
     [SerializeField] private UnityEvent onCollected;
 
@@ -30,11 +34,18 @@ public class QuestCollectible : MonoBehaviour
         GameObject target = collectibleObject != null
             ? collectibleObject
             : gameObject;
+        Vector3 pickupPosition = target.transform.position;
 
         if (!manager.CollectObject(questID, target))
             return;
 
         isCollected = true;
+
+        if (pickupVfxPrefab != null)
+        {
+            GameObject effect = Instantiate(pickupVfxPrefab, pickupPosition, pickupVfxPrefab.transform.rotation);
+            Destroy(effect, pickupVfxLifetime);
+        }
 
         Debug.Log($"[QuestCollectible] Collected: {target.name}", this);
 

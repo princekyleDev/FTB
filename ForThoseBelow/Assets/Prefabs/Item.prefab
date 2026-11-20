@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2954525272239394766}
   - component: {fileID: 8012080363118869926}
   - component: {fileID: 8536232220847563482}
+  - component: {fileID: 5771063551954333902}
   m_Layer: 0
   m_Name: Item
   m_TagString: Untagged
@@ -147,6 +148,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1562406176875654973}
+  - {fileID: 7035549715284341631}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8012080363118869926
@@ -175,7 +177,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 77634a2d565574c42be58aec4abed644, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -223,10 +225,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::QuestCollectible
   questID: Quest1
   collectibleObject: {fileID: 0}
-  disableOnCollect: 0
+  disableOnCollect: 1
+  pickupVfxPrefab: {fileID: 150002751350869822, guid: bd0982daa7c04a18af4fcbe21837ae16, type: 3}
+  pickupVfxLifetime: 4
   onCollected:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5771063551954333902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6722800970057906506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df205fc221744f65b741b5999885dbaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProximityOutlineGlow
+  glowRadius: 4
+  maxGlowBoost: 22
 --- !u!1 &6814156197825956566
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,16 +344,16 @@ MonoBehaviour:
           m_StringArgument: Enter
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 6722800970057906506}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 8536232220847563482}
+        m_TargetAssemblyTypeName: QuestCollectible, Assembly-CSharp
+        m_MethodName: Collect
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Enter
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   onExited:
@@ -462,3 +480,65 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &6196878686029830113
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2954525272239394766}
+    m_Modifications:
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6967574235407124300, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+      propertyPath: m_Name
+      value: ItemIdleVFX
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+--- !u!4 &7035549715284341631 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3773162604078359710, guid: 4562df04008c10446b7076ac6b6debf4, type: 3}
+  m_PrefabInstance: {fileID: 6196878686029830113}
+  m_PrefabAsset: {fileID: 0}

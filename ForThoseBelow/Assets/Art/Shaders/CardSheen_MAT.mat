@@ -34,7 +34,7 @@ Material:
     - _DissolveEdgeWidth: 0.05
     - _DissolvePreviewProgress: 0.586
     - _DissolveScale: 23.4
-    - _PreviewDissolve: 1
+    - _PreviewDissolve: 0
     - _SheenAngle: 25
     - _SheenPeriod: 2
     - _SheenStartTime: -1

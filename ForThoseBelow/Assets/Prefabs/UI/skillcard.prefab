@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6146906526117163519}
   - component: {fileID: 6756676366367126509}
   - component: {fileID: 8877150793600290368}
+  - component: {fileID: 5263089786730965831}
   m_Layer: 5
   m_Name: skillcard
   m_TagString: Untagged
@@ -88,3 +89,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966dc5095fd14344a25a6ad006b4c0dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CardSheenClock
+--- !u!114 &5263089786730965831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7364014156792740004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 874dc2b114954374b7b473d65ffbcb3c, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::UIShake
+  playback: 2
+  useUnscaledTime: 1
+  delay: 0.85
+  duration: 0.35
+  frequency: 16
+  strength: {x: 8, y: 5}
